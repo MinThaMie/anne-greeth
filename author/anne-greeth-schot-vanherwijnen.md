@@ -1,6 +1,6 @@
 ---
 name: Anne-Greeth Schot-van Herwijnen
-image: '/images/built-by.jpeg'
+image: '/images/anne-greeth.jpeg'
 cover: ''
 website: ''
 twitter: 'agvanherwijnen'
