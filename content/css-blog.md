@@ -11,7 +11,6 @@ date: Wed Oct 6 2021
 tags:
   - css
   - tech
-  - beginner
 ---
 
 In this blogpost I want to show you how I tackle CSS. There are so many CSS rules, so many properties and options that it might feel overwhelming. I would recommend you to start small. 
