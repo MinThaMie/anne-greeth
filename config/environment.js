@@ -28,15 +28,18 @@ module.exports = function (environment) {
       description: 'Tech, People, Life and more',
       coverImage: '/images/built-by.jpg',
 
-      navigation: [{
-        label: 'Home',
-        route: 'index'
-      }, {
-        label: 'Built by Anne-Greeth Schot-van Herwijnen',
-        route: 'page',
-        id: 'anne-greeth-schot-vanherwijnen'
-      }]
-    }
+      navigation: [
+        {
+          label: 'Home',
+          route: 'index',
+        },
+        {
+          label: 'Built by Anne-Greeth Schot-van Herwijnen',
+          route: 'page',
+          id: 'anne-greeth-schot-vanherwijnen',
+        },
+      ],
+    },
   };
 
   if (environment === 'development') {
