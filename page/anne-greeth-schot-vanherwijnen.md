@@ -6,4 +6,4 @@ website: ''
 twitter: 'agvanherwijnen'
 location: 'Groenlo, Netherlands'
 ---
-Anne-Greeth is a team coach and an enthusiastic EmberJS contributor. Being a volunteer at EmberConf and EmberFest and a writer at the EmberTimes.
+I am a team coach and an enthousiastic EmberJS contributor. I love being a volunteer at EmberConf and EmberFest and an occasional writer for the EmberTimes. I love to make tech and the world an inclusive and welcoming place.
