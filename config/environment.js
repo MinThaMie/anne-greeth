@@ -27,6 +27,7 @@ module.exports = function (environment) {
       title: "Anne-Greeth's Blog",
       description: 'Tech, People, Life and more',
       coverImage: '/images/built-by.jpg',
+      host: 'https://anne-greeth.netlify.app',
 
       navigation: [
         {
