@@ -8,7 +8,8 @@ featured: true
 authors:
   - anne-greeth-schot-vanherwijnen
 date: Apr 17 2021
-tags:
+tags: 
+  - mental-health
 ---
 
 When looking into the definition of zen, there are basically two ways of approaching the concept of zen. First and foremost a form of Buddhism, originally developed in Japan, that emphasizes that religious knowledge is achieved through emptying the mind of thoughts and giving attention to only one thing, rather than by reading religious writings. The more contemporary definition of zen is: relaxed and not worrying about things that you cannot change, the art of being in the present moment.
