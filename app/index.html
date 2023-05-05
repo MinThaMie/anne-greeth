@@ -6,6 +6,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <script src="https://unpkg.com/@telemetrydeck/sdk/dist/telemetrydeck.min.js" defer></script>
+    <script>
+      window.td = window.td || [];
+      td.push(['app', '3335B947-4AB7-4D1A-83B3-7547C05588C5'], ['user', 'anonymous'], ['signal']);
+    </script>
     {{content-for "head"}}
 
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
