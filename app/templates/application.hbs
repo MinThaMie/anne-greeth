@@ -1,18 +1,44 @@
 {{page-title "Anne-Greeth"}}
 
-<div class="container">
-<div class="menu">
-  <nav>
-    <LinkTo class="no-underline home" @route="index">Anne-Greeth</LinkTo>
-    <LinkTo @route="kaartjes">Kaarten</LinkTo>
-    <LinkTo @route="in-opdracht">In Opdracht</LinkTo>
-    <LinkTo @route="contact">Contact</LinkTo>
-  </nav>
-  <div class="links">
-    <a class="" href="https://www.instagram.com/anne.greeth/">@anne.greeth</a>
-    <a class="" href="mailto:info@anne-greeth.nl">info@anne-greeth.nl</a>
-  </div>
-</div>
 
-{{outlet}}
+{{#if (media 'isDesktop')}}
+<div class="desktop-container">
+  <div class="menu">
+    <nav>
+      <LinkTo class="no-underline home" @route="index">Anne-Greeth</LinkTo>
+      <LinkTo @route="kaartjes">Kaarten</LinkTo>
+      <LinkTo @route="in-opdracht">In Opdracht</LinkTo>
+      <LinkTo @route="contact">Contact</LinkTo>
+    </nav>
+    <div class="links">
+      <a class="" href="https://www.instagram.com/anne.greeth/">@anne.greeth</a>
+      <a class="" href="mailto:info@anne-greeth.nl">info@anne-greeth.nl</a>
+    </div>
+  </div>
+
+  {{outlet}}
 </div>
+{{else}}
+<MobileMenuWrapper as |mmw|>
+  <mmw.MobileMenu as |mm|>
+    <div class="menu mobile">
+      {{!-- template-lint-disable no-duplicate-landmark-elements --}}
+      <nav>
+        <mm.LinkTo class="no-underline home" @route="index">Anne-Greeth</mm.LinkTo>
+        <mm.LinkTo @route="kaartjes">Kaarten</mm.LinkTo>
+        <mm.LinkTo @route="in-opdracht">In Opdracht</mm.LinkTo>
+        <mm.LinkTo @route="contact">Contact</mm.LinkTo>
+      </nav>
+      <div class="links">
+        <a class="" href="https://www.instagram.com/anne.greeth/">@anne.greeth</a>
+        <a class="" href="mailto:info@anne-greeth.nl">info@anne-greeth.nl</a>
+      </div>
+    </div>
+  </mmw.MobileMenu>
+
+  <mmw.Content class="mobile-container">
+    <mmw.Toggle class="menu-button">Menu</mmw.Toggle>
+    {{outlet}}
+  </mmw.Content>
+</MobileMenuWrapper>
+{{/if}}

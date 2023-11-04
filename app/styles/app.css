@@ -10,11 +10,15 @@ body {
   background-color: #fff;
 }
 
-.container {
+.desktop-container {
   display: grid;
   grid-template-columns: max-content 1fr;
   margin: 20px;
   gap: 48px;
+}
+
+.mobile-container {
+  margin: 20px;
 }
 
 .menu {
@@ -58,10 +62,40 @@ nav > a.active.no-underline {
   border: none;
 }
 
+.menu.mobile {
+  height: 100%;
+}
+
 .links {
   display: flex;
   flex-flow: column;
   gap: 8px;
+}
+
+.menu.mobile > .links {
+  margin: 16px;
+}
+
+.menu.mobile > nav > a {
+  padding-left: 16px;
+}
+
+.menu-button {
+  border: 3px solid var(--primary-color);
+  font-family: Jura, sans-serif;
+  border-radius: 8px;
+  font-size: 24px;
+  padding: 4px 16px;
+  color: var(--primary-color);
+  background-color: unset;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-button:hover,
+.menu-button:active {
+  color: white;
+  background-color: var(--primary-color);
 }
 
 .content {
@@ -81,14 +115,9 @@ nav > a.active.no-underline {
 
 .picture-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 16px;
   justify-content: center;
   margin-top: 20px;
-}
-
-@media (width <= 450px) {
-  .no-mobile {
-    display: none;
-  }
 }
